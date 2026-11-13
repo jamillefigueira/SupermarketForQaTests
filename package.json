@@ -1,0 +1,24 @@
+{
+  "name": "testsupermarketforqa",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+  "test": "playwright test",
+  "test:simple": "playwright test --config=playwright.simple.config.js",
+  "test:bdd": "bddgen && playwright test",
+  "test:all": "npm run test:simple && npm run test:bdd"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "playwright": "^1.65.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.65.0",
+    "@types/node": "^26.6.6",
+    "playwright-bdd": "^9.2.1"
+  }
+}
